@@ -95,14 +95,31 @@ footer {
   flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
+.header-divider {
+  width: 100%;
+  border: 1px solid slategrey;
+}
+
+/* -- width calculated by dividing nav width (220px) by full width (360px) = 60% --*/ 
 header nav {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -110,16 +127,20 @@ header nav {
 }
 
 header nav ul {
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
+
 
 .hero-area {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
+
 
 
 aside {
@@ -130,11 +151,16 @@ aside {
 }
 
 .features {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
+
+.features p {
+  margin: 0;
+}
 
 .features-items {
   display: flex;
@@ -143,7 +169,10 @@ aside {
   flex-flow: row wrap;
 }
 
+
+
 .reviews {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -177,6 +206,8 @@ aside {
   flex-flow: row wrap;
 }
 
+
+
 .contact-section {
   display: flex;
   justify-content: center;
@@ -185,17 +216,29 @@ aside {
 }
 
 
+
+.footer-content {
+  width: 55%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .social p {
+footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
+
 
 
 
