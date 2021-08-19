@@ -659,7 +659,7 @@ input[type=button] {
   }
 
 
-  /* ================== About Page media queries ====================== */
+  /* ================== About Page - Tablet - media queries ====================== */
   .mission-content {
     display: flex;
     justify-content: space-evenly;
@@ -668,6 +668,10 @@ input[type=button] {
 
   .mission-content p {
     padding-right: 18px;
+  }
+
+  .map figure {
+    padding-bottom: 45%;
   }
 
   .about-contact {
@@ -682,7 +686,7 @@ input[type=button] {
     padding-right: 80px;
   }
 
-  /* =================== FAQ Page media queries ======================= */
+  /* =================== FAQ Page - Tablet - media queries ======================= */
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -766,6 +770,23 @@ input[type=button] {
   .reviews article {
     width: 450px;
   }
+
+
+  /* ============= About Page - Desktop - media queries ============= */
+  .map figure {
+    padding-bottom: 30%;
+  }
+
+
+
+  /* ============== Faq Page - Desktop - media queries =============== */
+
+
+
+
+
+
+
 
 
 
