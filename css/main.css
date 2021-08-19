@@ -239,13 +239,17 @@ aside {
 
 .features {
   width: auto;
-  height: 800px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-image: url("../img/rawpixel-800820-unsplash1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 
@@ -660,10 +664,17 @@ input[type=button] {
 
 
   /* ================== About Page - Tablet - media queries ====================== */
+  .mission h1 {
+    padding: 50px;
+    margin: 0;
+    word-spacing: 5px;
+  }
+
   .mission-content {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
+    padding: 0 50px 50px 50px;
   }
 
   .mission-content p {
@@ -674,16 +685,21 @@ input[type=button] {
     padding-bottom: 45%;
   }
 
+  .contact-section h1 {
+    padding: 50px 50px 20px 50px;
+    margin: 0;
+  }
+
   .about-contact {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     flex-flow: row;
+    padding: 0 50px 50px 50px;
   }
 
   .general,
   .facilitator {
-    padding-right: 80px;
   }
 
   /* =================== FAQ Page - Tablet - media queries ======================= */
@@ -739,8 +755,13 @@ input[type=button] {
     align-items: center;
   }
 
-  .features-items {
+  .features-items h1 {
     width: 900px;
+    padding: 50px 50px 0 50px;
+  }
+
+  .features-items article {
+    padding: 40px 70px;
   }
 
   .reviews {
@@ -773,18 +794,27 @@ input[type=button] {
 
 
   /* ============= About Page - Desktop - media queries ============= */
+  .mission h1,
+  .contact-section h1 {
+    font-size: 4em;
+  }
+
+  .mission-content {
+    padding: 0 50px 50px 50px;
+  }
+
+
   .map figure {
     padding-bottom: 30%;
+  }
+
+  .about-contact {
+    justify-content: space-around;
   }
 
 
 
   /* ============== Faq Page - Desktop - media queries =============== */
-
-
-
-
-
 
 
 
