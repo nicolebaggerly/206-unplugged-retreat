@@ -207,7 +207,7 @@ header nav ul {
 .hero-area {
   width: auto;
   height: 600px;
-  background-image: url("../img/jake-melara-30679-unsplash.jpg") #333;
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
