@@ -143,7 +143,7 @@ img {
 }
  
 figure {
-  width: 100%;
+  margin: 0;
 }
  
 address {
@@ -165,9 +165,6 @@ footer {
   background: #202322;
 }
 
-header {
-}
-
 .content-wrapper {
   width: 100%;
   padding: 20px;
@@ -179,6 +176,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .header-divider {
@@ -268,12 +273,12 @@ aside {
   background: #2a423a;
 }
 
-.reviews img {
-
+.reviews h1 {
+  padding: 0 20px;
 }
 
 
-/* ---- faq page ---- */
+/* ------------ faq page ------------ */
 
 .faq {
   display: flex;
@@ -290,7 +295,7 @@ aside {
 }
 
 
-/* ---- about page ---- */
+/* ------------- about page ------------- */
 
 .mission {
   display: flex;
@@ -298,7 +303,6 @@ aside {
   align-items: flex-start;
   flex-flow: row wrap;
 }
-
 
 
 .contact-section {
@@ -485,6 +489,10 @@ input[type=button] {
     padding: 10px 50px;
   }
 
+  header figure {
+    width: 50%;
+  }
+
   .hero-area {
     width: 100%;
   }
@@ -555,11 +563,18 @@ input[type=button] {
   .reviews {
     width: 100%;
     height: 500px;
+    justify-content: flex-start;
+  }
+
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   .reviews h1 {
     margin: 0;
-    padding: 30px 30px;
+    padding: 50px 20px 0 50px;
   }
 
 /* --- Forced line break by using display: table --- */
@@ -567,9 +582,8 @@ input[type=button] {
     display: table;
   }
 
-  .reviews img {
-    width: 45%;
-    padding: 0 0 0 30px;
+  .reviews figure {
+    width: 40%;
   }
 
   .reviews article {
@@ -712,7 +726,7 @@ input[type=button] {
 
   .reviews h1 {
     text-align: left;
-    padding: 30px 20px 0 260px;
+    padding: 30px 20px 0 255px;
   }
   /* Padding left to align with img and article below */
 
@@ -723,9 +737,9 @@ input[type=button] {
     align-items: center;
   }
 
-  .reviews img {
+  .reviews figure {
     width: 30%;
-    padding: 20px;
+    padding: 0 40px;
   }
 
   .reviews article {
