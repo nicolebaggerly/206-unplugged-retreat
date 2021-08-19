@@ -110,19 +110,31 @@ a {
   color: #e2e3ed;
   text-decoration: none;
 }
+
+h1 {
+  color: #fff;
+  font-size: 2.2em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
  
 h2 {
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 1.7em;
+  font-weight: 400;
 }
  
 h3, 
 h4 {
+  color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 1.4em;
+  font-weight: 400;
 }
  
 p {
+  color: #fff;
   font-size: 1em;
 }
  
@@ -145,14 +157,15 @@ address {
 
 header, 
 footer {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background: #202322;
 }
 
 header {
-  padding: 15px 0;
 }
 
 .content-wrapper {
@@ -192,28 +205,43 @@ header nav ul {
 
 
 .hero-area {
+  width: auto;
+  height: 600px;
+  background-image: url("../img/jake-melara-30679-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 20px;
+}
+
+.hero-area h1 {
+  padding: 0 20px;
 }
 
 
 
 aside {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  background: #527158;
 }
 
 
 
 .features {
-  width: 90%;
+  width: auto;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  background-image: url("../img/rawpixel-800820-unsplash1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -232,11 +260,16 @@ aside {
 
 
 .reviews {
-  width: 90%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  background: #2a423a;
+}
+
+.reviews img {
+
 }
 
 
@@ -276,10 +309,16 @@ aside {
 }
 
 
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+}
 
 .footer-content {
   width: 55%;
-  margin: 50px 0;
+  margin: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,7 +340,36 @@ footer p {
 
 
 .copyright {
+  width: 100%;
   padding-bottom: 10px;
+  background: #202322;
+}
+
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -403,6 +471,7 @@ footer p {
   }
 
   header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -413,29 +482,27 @@ footer p {
     justify-content: space-between;
     align-items: center;
     flex-flow: row;
-  }
-
-  .content-wrapper {
-    padding: 65px;
+    padding: 10px 50px;
   }
 
   .hero-area {
-    padding: 65px;
+    width: 100%;
   }
 
   .hero-area h1 {
     width: 400px;
+    padding: 30px 50px;
   }
 
 
   aside {
     width: 100%;
-    height: 260px;
+    height: 300px;
   }
 
   aside .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     flex-flow: row;
   }
@@ -454,7 +521,7 @@ footer p {
     align-items: flex-start;
     flex-flow: column;
     width: 290px;
-    line-height: 25px;
+    line-height: 10px;
   }
 
   input {
@@ -470,6 +537,7 @@ footer p {
 
   .features-items h1 {
     width: 100%;
+    padding: 0 30px;
   }
 
   .features-items article {
@@ -491,6 +559,7 @@ footer p {
 
   .reviews h1 {
     margin: 0;
+    padding: 30px 30px;
   }
 
 /* --- Forced line break by using display: table --- */
@@ -498,15 +567,24 @@ footer p {
     display: table;
   }
 
+  .reviews img {
+    width: 45%;
+    padding: 0 0 0 30px;
+  }
+
   .reviews article {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-flow: row wrap;
+    display: block;
+    float: right;
+    width: 350px;
+  }
+
+  .reviews article h2 {
+    margin: 0;
   }
 
   .reviews article p {
     margin: 0;
+    padding: 10px 0;
   }
 
 
@@ -587,11 +665,22 @@ footer p {
 } /* tablet media queries end */
 
 
+/* ========= DESKTOP MEDIA QUERIES BEGIN ========= */
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
-  body {
+  header .content-wrapper {
+    padding: 10px 80px;
+  }
+
+  h1 {
     padding: 0 50px 0 50px;
+  }
+
+  .hero-area h1 {
+    width: 600px;
+    font-size: 3.3em;
+    padding: 30px 80px;
   }
 
   aside .content-wrapper {
@@ -603,6 +692,44 @@ footer p {
 
   span {
     display: inline;
+  }
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-items {
+    width: 900px;
+  }
+
+  .reviews {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .reviews h1 {
+    text-align: left;
+    padding: 30px 20px 0 260px;
+  }
+  /* Padding left to align with img and article below */
+
+
+  .reviews .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews img {
+    width: 30%;
+    padding: 20px;
+  }
+
+  .reviews article {
+    width: 450px;
   }
 
 
