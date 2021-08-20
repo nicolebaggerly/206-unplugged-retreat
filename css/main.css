@@ -254,8 +254,9 @@ aside {
 
 
 .features p {
-  margin: 0;
+  width: 200px;
   text-align: center;
+  margin: 0;
 }
 
 .features-items {
@@ -265,6 +266,9 @@ aside {
   flex-flow: row wrap;
 }
 
+.features-items article {
+  padding: 20px;
+}
 
 
 .reviews {
@@ -359,6 +363,21 @@ footer .social-icons {
   justify-content: center;
   align-items: center;
 }
+
+.social-icons p {
+  padding: 0 20px;
+}
+
+.social-icons i {
+  background-color: #527158;
+  border-radius: 50%;
+  border: 1px solid #527158;
+  width: 20px;
+  height: 100%;
+  color: white;
+  padding: 10px;
+}
+
 
 footer p {
   display: flex;
