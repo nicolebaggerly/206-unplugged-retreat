@@ -123,6 +123,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.7em;
   font-weight: 400;
+  margin: 0;
 }
  
 h3, 
@@ -150,9 +151,6 @@ address {
   font-style: normal;
 }
  
-.content-wrapper {
-}
-
 
 header, 
 footer {
@@ -166,7 +164,7 @@ footer {
 
 .content-wrapper {
   width: 100%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 header .content-wrapper {
@@ -178,11 +176,11 @@ header .content-wrapper {
 }
 
 header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -233,6 +231,7 @@ aside {
   align-items: flex-start;
   flex-flow: row wrap;
   background: #527158;
+  padding-bottom: 20px;
 }
 
 
@@ -285,9 +284,11 @@ aside {
 }
 
 
+
 /* ------------ faq page ------------ */
 
 .faq {
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,10 +296,15 @@ aside {
 }
 
 .faq-content {
+  font-size: 1em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-flow: row wrap;
+}
+
+.faq h2 {
+  font-size: 1.2em;
 }
 
 
@@ -550,6 +556,7 @@ input[type=button] {
   aside {
     width: 100%;
     height: 300px;
+    padding: 20px 0 0 0;
   }
 
   aside .content-wrapper {
@@ -564,7 +571,7 @@ input[type=button] {
     justify-content: space-between;
     align-items: flex-start;
     flex-flow: column;
-    width: 250px;
+    width: 300px;
   }
 
   aside .sign-up {
@@ -725,18 +732,26 @@ input[type=button] {
 
   .faq .content-wrapper {
     justify-content: space-between;
+    flex-flow: column;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    padding: 35px;
   }
 
-  .faq h2 {
-    width: 100%;
+  .faq h1 {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .question {
+  width: 305px;
+  padding: 0 20px 30px 0;
   }
 
 
-} /* tablet media queries end */
+} 
+/* tablet media queries end */
 
 
 /* ========= DESKTOP MEDIA QUERIES BEGIN ========= */
@@ -834,6 +849,20 @@ input[type=button] {
 
 
   /* ============== Faq Page - Desktop - media queries =============== */
+  .faq-content {
+    padding: 60px;
+  }
+
+  .faq-content h1 {
+    font-size: 3em;
+    padding: 0 100px 0 0;
+    margin: 50px 0;
+  }
+
+  .question {
+    width: 500px;
+    padding: 0 70px 50px 0;
+  }
 
 
 
