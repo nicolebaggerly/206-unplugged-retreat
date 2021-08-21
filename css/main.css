@@ -164,7 +164,6 @@ footer {
 
 .content-wrapper {
   width: 100%;
-  padding: 0 20px;
 }
 
 header .content-wrapper {
@@ -231,7 +230,7 @@ aside {
   align-items: flex-start;
   flex-flow: row wrap;
   background: #527158;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 
@@ -244,6 +243,10 @@ aside {
   background-image: url("../img/rawpixel-800820-unsplash1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.features h1 {
+  padding: 20px;
 }
 
 .features i {
@@ -281,6 +284,14 @@ aside {
 
 .reviews h1 {
   padding: 0 20px;
+}
+
+.reviews figure {
+  padding: 0 20px;
+}
+
+.reviews article {
+  padding: 10px 20px;
 }
 
 
@@ -364,6 +375,11 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
+.contact,
+.social-icons {
+  padding: 20px 0;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: center;
@@ -410,6 +426,7 @@ input[type=text] {
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  margin-top: 10px;
 }
  
 input[type=button] {
@@ -555,8 +572,8 @@ input[type=button] {
 
   aside {
     width: 100%;
-    height: 300px;
-    padding: 20px 0 0 0;
+    height: 260px;
+    padding: 40px 0 0 0;
   }
 
   aside .content-wrapper {
@@ -579,12 +596,10 @@ input[type=button] {
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: column;
-    width: 290px;
-    line-height: 10px;
+    width: 300px;
   }
 
   input {
-    line-height: 2em;
     width: 270px;
     padding: 2px;
   }
@@ -625,7 +640,7 @@ input[type=button] {
 
   .reviews h1 {
     margin: 0;
-    padding: 50px 20px 0 50px;
+    padding: 50px 20px 0 35px;
   }
 
 /* --- Forced line break by using display: table --- */
@@ -754,7 +769,7 @@ input[type=button] {
 /* tablet media queries end */
 
 
-/* ========= DESKTOP MEDIA QUERIES BEGIN ========= */
+/* ========= *** DESKTOP MEDIA QUERIES BEGIN *** ========= */
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
 
@@ -779,6 +794,13 @@ input[type=button] {
     flex-flow: row;
   }
 
+  aside {
+    padding: 20px 0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   span {
     display: inline;
   }
@@ -790,23 +812,24 @@ input[type=button] {
   }
 
   .features-items h1 {
-    width: 900px;
+    width: 950px;
     padding: 50px 50px 0 50px;
   }
 
   .features-items article {
-    padding: 40px 70px;
+    padding: 40px 80px;
   }
 
   .reviews {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-flow: column;
   }
 
   .reviews h1 {
     text-align: left;
-    padding: 30px 20px 0 255px;
+    padding: 50px 20px 30px 232px;
   }
   /* Padding left to align with img and article below */
 
@@ -854,7 +877,7 @@ input[type=button] {
   }
 
   .faq-content h1 {
-    font-size: 3em;
+    font-size: 4em;
     padding: 0 100px 0 0;
     margin: 50px 0;
   }
